@@ -16,11 +16,15 @@ class MovieTableViewCell: UITableViewCell {
     
     func configure(with movie: Movie) {
         
-        let imagePath = "https://image.tmdb.org/t/p/w185/\(movie.poster_path!)"
+        if let imagePath = URL(string: "https://image.tmdb.org/t/p/w185/\(movie.poster_path ?? "")") {
+            movieImageView.af.setImage(withURL: imagePath)
+        } else {
+            movieImageView.af.setImage(withURL: URL(string: "https://thenounproject.com/icon/no-image-2884221/")!)
+        }
 
         movieTitleLabel.text = movie.original_title
         movieSynopsisLabel.text = movie.overview
-        movieImageView.af.setImage(withURL: URL(string: imagePath )!)
+        
     }
     
 }
