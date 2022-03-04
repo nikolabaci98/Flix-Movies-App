@@ -16,7 +16,9 @@ The following functionality is complete:
 
 ### Video Walkthrough
 Here's a walkthrough of implemented user stories:
+
 <img src='./recording.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 GIF created with [EZgif](https://ezgif.com//).
 
 
@@ -33,7 +35,9 @@ GIF created with [EZgif](https://ezgif.com//).
 
 ### App Walkthrough
 Here's a walkthrough of implemented user stories:
+
 <img src="recording_2.gif" width=250><br>
+
 GIF created with [EZgif](https://ezgif.com//).
 
 ## License
